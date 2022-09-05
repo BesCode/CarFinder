@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <title>Car Finder</title>
+</head>
+
+<body>
+    <header>
+        <div id="header" class="container">
+           <h3 class="headerTitle">Car<span>Finder</span></h3>
+
+           <nav id="headerNav">
+                <ul>
+                    <li class="active">Home</li>
+                    <li>Type</li>
+                    <li>Offer</li>
+                    <li>Why Us</li>
+                    <li>Cars</li>
+                    <li>App</li>
+                    <li>Payment</li>
+
+                    <div class="navBtns">
+                        <button class="sign"> <span class="material-symbols-outlined">
+                            person
+                            </span> Sign in</button>
+                        <button class="sell"> <span class="material-symbols-outlined">
+                            add
+                            </span> Sell Car</button>
+                    </div>
+                </ul>
+            </nav>
+
+            <div class="menu" onclick="handleMenu()">
+                <span class="material-symbols-outlined">
+                    menu
+                    </span>
+            </div>
+        </div>
+
+        
+
+        <div id="hero">
+            <div class="heroImg container">
+                <img src="./yellow car.png" alt="yellow car">
+            </div>
+
+            <div class="heroText container">
+                <h2>Easy way to find</h2>
+                <h2>the right car</h2>
+                <p>Finder is a leading digital marketingplace for the auomotive industry that connects car shoppers with sellers</p>
+                <button>Book Meeting</button>
+            </div>
+
+        </div>
+    </header>
+
+    <main>
+        <section class="first container">
+            <div class="firstBtns">
+                <button class="toks">Toks</button>
+                <button class="used">Used</button>
+            </div>
+
+            <div class="firstTable">
+                <!-- <table>
+                    <th><input type="text" placeholder="keywords" ></th>
+                    <th><input type="text" placeholder="brand"></th>
+                    <th><input type="text" placeholder="Model"></th>
+                    <th><input type="text" placeholder="Tyre size"></th>
+                    <th><input type="text" placeholder="location"><button>search</button></th>
+                </table>  -->
+
+                <input type="text" placeholder="Keywords">
+                <input type="text" placeholder="brand">
+                <input type="text" placeholder="Model">
+                <input type="text" placeholder="Tyre size">
+                <div class="locSearch">
+                    <input type="text" placeholder="location" class="search"><button>Search</button>
+                </div>
+        </section>
+
+        <section class="cars">
+            <div class="carHeader">
+                <h3>Popular Car body types</h3>
+                <h6>View all +</h6>
+            </div>
+
+            <div class="carGrid">
+               <div class="carCard">
+                   <div class="carImg">
+                        <img src="" alt="">
+                   </div>
+                   <h6>Sedan</h6>
+               </div>
+
+               <div class="carCard">
+                <div class="carImg">
+                     <img src="" alt="">
+                </div>
+                <h6>SUV</h6>
+            </div>
+
+            <div class="carCard">
+                <div class="carImg">
+                     <img src="" alt="">
+                </div>
+                <h6>Wagon</h6>
+            </div>
+
+            <div class="carCard">
+                <div class="carImg">
+                     <img src="" alt="">
+                </div>
+                <h6>Crossover</h6>
+            </div>
+
+            <div class="carCard">
+                <div class="carImg">
+                     <img src="" alt="">
+                </div>
+                <h6>Coupe</h6>
+            </div>
+
+            <div class="carCard">
+                <div class="carImg">
+                     <img src="" alt="">
+                </div>
+                <h6>Pick up</h6>
+            </div>
+
+            <div class="carCard">
+                <div class="carImg">
+                     <img src="" alt="">
+                </div>
+                <h6>Sport Coupe</h6>
+            </div>
+
+            <div class="carCard">
+                <div class="carImg">
+                     <img src="" alt="">
+                </div>
+                <h6>Compact</h6>
+            </div>
+
+            <div class="carCard">
+                <div class="carImg">
+                     <img src="" alt="">
+                </div>
+                <h6>Convertible</h6>
+            </div>
+
+            <div class="carCard">
+                <div class="carImg">
+                     <img src="" alt="">
+                </div>
+                <h6>Family MPV</h6>
+            </div>
+
+
+            </div>
+        </section>
+    </main>
+    
+</body>
+<script src="script.js"></script>
+</html>
