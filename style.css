@@ -13,6 +13,10 @@
   --greyColor:grey;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 img {
   width: 100%;
 }
@@ -134,6 +138,8 @@ header {
 
 #header ul .navBtns .sign {
   background-color: transparent;
+  -webkit-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.6), 0px 0px 5px 0px rgba(0, 0, 0, 0.6);
+          box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.6), 0px 0px 5px 0px rgba(0, 0, 0, 0.6);
 }
 
 #header ul .navBtns .sell {
@@ -195,6 +201,8 @@ header {
 
 .first .firstBtns .used {
   background-color: transparent;
+  -webkit-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.6), 0px 0px 5px 0px rgba(0, 0, 0, 0.6);
+          box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.6), 0px 0px 5px 0px rgba(0, 0, 0, 0.6);
 }
 
 .first .firstBtns .used:hover {
@@ -235,5 +243,34 @@ header {
   position: absolute;
   top: .2rem;
   right: .2rem;
+}
+
+.cars .carHeader {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.cars .carGrid {
+  margin: 1rem 2rem;
+}
+
+.cars .carGrid .carCard {
+  background-color: var(--primaryColor);
+  margin-bottom: 1rem;
+  text-align: center;
+  font-size: 1.5rem;
+  -webkit-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.6), 0px 0px 5px 0px rgba(0, 0, 0, 0.6);
+          box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.6), 0px 0px 5px 0px rgba(0, 0, 0, 0.6);
+}
+
+.cars .carGrid .carCard .carImg {
+  width: 100%;
 }
 /*# sourceMappingURL=style.css.map */
