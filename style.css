@@ -68,6 +68,8 @@ header {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  border-bottom: 1px solid grey;
+  position: relative;
 }
 
 #header h3 {
@@ -88,8 +90,15 @@ header {
   display: -ms-grid;
   display: grid;
   place-content: center;
+  -webkit-transition: 0.5s linear;
+  transition: 0.5s linear;
   -webkit-clip-path: polygon(100% 0, 100% 0, 100% 100%, 100% 100%);
           clip-path: polygon(100% 0, 100% 0, 100% 100%, 100% 100%);
+  -webkit-box-pack: left;
+      -ms-flex-pack: left;
+          justify-content: left;
+  padding-left: 2rem;
+  text-align: left;
 }
 
 #header ul li {
@@ -99,13 +108,12 @@ header {
   cursor: pointer;
   -webkit-transition: .5s ease;
   transition: .5s ease;
-  text-align: center;
   color: var(--whiteColor);
   text-transform: uppercase;
 }
 
 #header ul li:hover {
-  color: var(--greyColor);
+  color: var(--secondaryColor);
 }
 
 #header ul .active {
@@ -164,7 +172,10 @@ header {
 
 #hero {
   height: calc(100vh - 3rem);
-  margin-bottom: 2rem;
+  margin-bottom: 2.5rem;
+  display: -ms-grid;
+  display: grid;
+  place-content: center;
 }
 
 #hero .heroText p {
@@ -259,6 +270,11 @@ header {
 
 .cars .carGrid {
   margin: 1rem 2rem;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
 }
 
 .cars .carGrid .carCard {
@@ -272,5 +288,9 @@ header {
 
 .cars .carGrid .carCard .carImg {
   width: 100%;
+}
+
+.cars .carGrid .carCard h6 {
+  padding-bottom: .7rem;
 }
 /*# sourceMappingURL=style.css.map */

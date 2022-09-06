@@ -49,6 +49,7 @@ body{
 
 header{
     height: 100vh;
+    
 }
 
 #header{
@@ -58,6 +59,8 @@ header{
     display: flex;
     align-items: center;
     justify-content: space-between;
+    border-bottom: 1px solid grey;
+    position: relative;
     
     h3{
         color: var(--secondaryColor);
@@ -76,7 +79,11 @@ header{
         width: 100%;
         display: grid;
         place-content: center;
-        clip-path: polygon(100% 0, 100% 0, 100% 100%, 100% 100%);
+        transition: 0.5s linear;
+        clip-path: polygon(100% 0, 100% 0, 100% 100%, 100% 100%); 
+        justify-content: left;
+        padding-left: 2rem;
+        text-align: left;
 
         li{
             list-style: none;
@@ -84,12 +91,11 @@ header{
             font-size: 1.5rem;
             cursor: pointer;
             transition: .5s ease;
-            text-align: center;
             color: var(--whiteColor);
             text-transform: uppercase;
             
             &:hover{
-                color: var(--greyColor);
+                color: var(--secondaryColor);
             }
         }
 
@@ -150,7 +156,9 @@ header{
 
 #hero{
     height: calc(100vh - 3rem);
-    margin-bottom: 2rem;
+    margin-bottom: 2.5rem;
+    display: grid;
+    place-content: center;
 
     .heroText{
         p{
@@ -239,6 +247,10 @@ header{
 
     .carGrid{
         margin: 1rem 2rem;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1rem;
+
        
 
         .carCard{
@@ -251,6 +263,10 @@ header{
 
             .carImg{
                 width: 100%;
+            }
+
+            h6{
+                padding-bottom: .7rem;
             }
         }
     }
